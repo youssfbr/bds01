@@ -16,13 +16,13 @@ import org.springframework.transaction.annotation.Transactional;
 @SpringBootTest
 @AutoConfigureMockMvc
 @Transactional
-public class DepartmentControllerIT {
+class DepartmentControllerIT {
 
 	@Autowired
 	private MockMvc mockMvc;
 	
 	@Test
-	public void findAllShouldReturnAllResourcesSortedByName() throws Exception {
+	 void findAllShouldReturnAllResourcesSortedByName() throws Exception {
 		
 		ResultActions result =
 				mockMvc.perform(get("/departments")
